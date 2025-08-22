@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Vishvanath Madasamy Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-contact" href="/">Vishvanath Madasamy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="/certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="fade-down">Contact Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-7" data-aos="fade-up">
+          <!-- Working Formspree form -->
+          <form 
+            action="https://formspree.io/f/movdpyda" 
+            method="POST"
+            class="contact-form p-4 bg-light rounded-4 shadow"
+          >
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required autocomplete="off">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required autocomplete="off">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary px-4">Send Message</button>
+          </form>
+        </div>
+      </div>
+      <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="200">
+        <a href="mailto:vishvanathmadasamyofficial@gmail.com" class="me-3 text-decoration-none"><i class="bi bi-envelope"></i> vishvanathmadasamyofficial@gmail.com</a>
+        <a href="https://www.linkedin.com/in/vishvanath-madasamy/" target="_blank" class="me-3 text-decoration-none"><i class="bi bi-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/Vishvanath0523" target="_blank" class="text-decoration-none"><i class="bi bi-github"></i> GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gradient2 text-center py-3 text-light">
+    <small>&copy; 2025 Vishvanath Madasamy. All rights reserved.</small>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
