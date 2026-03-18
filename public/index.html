@@ -4,16 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vishvanath Madasamy | Portfolio</title>
+
+  <!-- ✅ Google Search Console Verification -->
+  <meta name="google-site-verification" content="-8cscTNJ_6rpHfa-kmme1cwa4_q62a8wQLsk8j1GNc0" />
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+
   <style>
-    /* TEMP: Prevent navbar from overlapping hero section */
     .hero { padding-top: 80px; }
   </style>
 </head>
+
 <body>
+
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
@@ -21,6 +27,7 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
@@ -34,108 +41,74 @@
     </div>
   </nav>
 
+  <!-- Hero Section -->
+  <section class="hero text-center text-white">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
 
+          <img src="./images/profile-pic.png" alt="Profile photo"
+               class="profile-img img-fluid rounded-circle mx-auto d-block mb-4">
 
+          <h1 class="fw-bold mb-2">Vishvanath Madasamy</h1>
+          <p class="lead mb-4">Creative <span class="typed-text"></span></p>
 
-<!-- Hero Section -->
-<section class="hero text-center text-white">
-  <div class="container py-5">
-    <div class="row justify-content-center">
-      <div class="col-12 text-center">
-
-        <img src="./images/profile-pic.png" alt="Profile photo"
-             class="profile-img img-fluid rounded-circle mx-auto d-block mb-4">
-
-        <h1 class="fw-bold mb-2">Vishvanath Madasamy</h1>
-        <p class="lead mb-4">Creative <span class="typed-text"></span></p>
-
-        <div class="d-flex gap-3 justify-content-center">
-
-          <!-- ① View Work -->
-          <a href="./projects.html"  class="btn btn-light btn-lg px-4">
-            View Work
-          </a>
-
-          <!-- ② Hire Me -->
-          <a href="./contact.html"   class="btn btn-outline-light btn-lg px-4">
-            Hire Me
-          </a>
-
-          <!-- ③ Résumé (opens new tab) -->
-          <a href="./images/Vishvanath Madasamy_Resume.pdf"     target="_blank" rel="noopener"
-             class="btn btn-outline-light btn-lg px-4">
-            Resume
-          </a>
+          <div class="d-flex gap-3 justify-content-center">
+            <a href="./projects.html" class="btn btn-light btn-lg px-4">View Work</a>
+            <a href="./contact.html" class="btn btn-outline-light btn-lg px-4">Hire Me</a>
+            <a href="./images/Vishvanath Madasamy_Resume.pdf" target="_blank"
+               class="btn btn-outline-light btn-lg px-4">Resume</a>
+          </div>
 
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-
-
-
-  <!-- Social & Likes Section -->
+  <!-- Social Section -->
   <section class="social-section">
     <div class="container">
       <h3>Find me on</h3>
+
       <div class="social-links">
         <a href="https://www.linkedin.com/in/vishvanath-madasamy/" target="_blank" class="social-link-btn linkedin">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
           LinkedIn
         </a>
         <a href="https://github.com/Vishvanath0523" target="_blank" class="social-link-btn github">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
           GitHub
         </a>
         <a href="https://www.hackerrank.com/profile/vishvanathmadas2" target="_blank" class="social-link-btn hackerrank">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/hackerrank.svg" alt="HackerRank">
           HackerRank
         </a>
       </div>
 
-
-   
-
-      
-   <!-- Likes bar (your snippet) -->
-<div class="likes-bar">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffd200"
-       class="bi bi-heart-fill" viewBox="0 0 16 16">
-    <path d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053
-             c-1.523 2.933.044 6.287 3.314 8.385L8 15l3.286-3.562
-             c3.27-2.098 4.837-5.452 3.314-8.385C13.486.878
-             10.4.28 8.717 2.01L8 2.748z"/>
-  </svg>
-  Likes: <span id="like-count">0</span>
-  <button id="like-btn">Like</button>
-</div>
-
-<!-- Put this script just before </body> or wrap it in DOMContentLoaded -->
-<script>
-  // ------- DOM handles -------
-  const likeBtn   = document.getElementById('like-btn');
-  const likeCount = document.getElementById('like-count');
-
-  // ------- Load stored value (or start at 0) -------
-  let count = +localStorage.getItem('likes') || 0;
-  likeCount.textContent = count;
-
-  // ------- Click handler -------
-  likeBtn.addEventListener('click', () => {
-    count++;
-    likeCount.textContent = count;
-    localStorage.setItem('likes', count);   // persist
-  });
-</script>
-
+      <!-- Likes -->
+      <div class="likes-bar mt-4">
+        ❤️ Likes: <span id="like-count">0</span>
+        <button id="like-btn">Like</button>
+      </div>
+    </div>
   </section>
+
+  <!-- Scripts -->
+  <script>
+    const likeBtn = document.getElementById('like-btn');
+    const likeCount = document.getElementById('like-count');
+
+    let count = +localStorage.getItem('likes') || 0;
+    likeCount.textContent = count;
+
+    likeBtn.addEventListener('click', () => {
+      count++;
+      likeCount.textContent = count;
+      localStorage.setItem('likes', count);
+    });
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="js/main.js"></script>
+
 </body>
 </html>
